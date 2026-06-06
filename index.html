@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amraa | درعك الرقمي للتعافي والإنتاجية</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="حمل تطبيق Amraa للأندرويد مجاناً. درعك الواقي لتنظيم الوقت، التعافي من الإدمان الرقمي والإباحي، قفل التطبيقات المشتتة، حظر المواقع الإباحية، واختبارات الذكاء العقلي اليومية.">
+    <meta name="keywords" content="تطبيق Amraa, Amraa apk, تحميل Amraa, تنظيم الوقت, التعافي من الاباحية, حظر المواقع الاباحية, قفل التطبيقات, اختبار ذكاء, أذكار الصباح والمساء, التعافي من الادمان الرقمي">
+    <meta name="author" content="Amraa Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amraa | درعك الرقمي للتعافي والإنتاجية">
+    <meta property="og:description" content="تطبيق متكامل للأندرويد لمساعدتك على تنظيم وقتك والتعافي من الإدمان الرقمي وقفل التطبيقات وحظر المواقع الضارة مع أذكار وقصص يومية.">
+    <meta property="og:image" content="./app_icon.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Amraa | درعك الرقمي">
+    <meta property="twitter:description" content="درعك الرقمي للتعافي وحظر المواقع الضارة وتنظيم وقتك بالكامل. حمل الآن بصيغة APK.">
+    <meta property="twitter:image" content="./app_icon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Animated Background Glowing Blobs -->
+    <div class="bg-glow-container">
+        <div class="bg-blob bg-blob-1"></div>
+        <div class="bg-blob bg-blob-2"></div>
+        <div class="bg-blob bg-blob-3"></div>
+        <div class="bg-blob bg-blob-4"></div>
+    </div>
+
+    <!-- Header Navbar -->
+    <header id="main-header">
+        <div class="container">
+            <a href="#" class="logo-area" id="logo-link">
+                <div class="logo-img-wrapper">
+                    <img src="./app_icon.png" alt="Amraa Logo" class="logo-img">
+                </div>
+                <span class="logo-text">Amraa</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#" class="active" id="nav-home">الرئيسية</a></li>
+                    <li><a href="#features" id="nav-feats">المميزات</a></li>
+                    <li><a href="#interactive" id="nav-interact">تجربة تفاعلية</a></li>
+                    <li><a href="#installation" id="nav-guide">دليل التثبيت</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-btn">
+                <a href="./app-release.apk" class="btn-header" download id="download-header-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    <span>تحميل Amraa</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content reveal-up">
+                <div class="badge-new">
+                    <span class="pulse-dot"></span>
+                    <span>الإصدار الأخير متوفر الآن مجاناً</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">درعك الرقمي</span>
+                    <span class="title-line gradient-text">للتعافي والإنتاجية</span>
+                </h1>
+                
+                <p class="hero-description">
+                    استعد السيطرة على حياتك الرقمية. تطبيق <strong>Amraa</strong> يدمج أدوات تنظيم الوقت، وقفل التطبيقات، وحظر المواقع الإباحية، إلى جانب الأذكار اليومية واختبارات الذكاء في باقة ذكية واحدة لحمايتك.
+                </p>
+
+                <div class="cta-group">
+                    <a href="./app-release.apk" class="btn-download" download id="main-download-btn">
+                        <div class="btn-icon-wrapper">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                            </svg>
+                        </div>
+                        <div class="btn-download-text">
+                            <span class="small">تحميل للأندرويد</span>
+                            <span class="big">Android APK</span>
+                        </div>
+                    </a>
+
+                    <a href="#installation" class="btn-secondary" id="secondary-guide-btn">
+                        <span>دليل التثبيت</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                            <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="app-meta-info">
+                    <div class="meta-item">
+                        <div class="meta-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 6h-4v2h4v2h-4v2h4v2H9V7h6v2z"/></svg>
+                        </div>
+                        <span>86 MB</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.3-.16-.68-.04-.84.26l-1.92 3.32C14.8 8.4 13.44 8.08 12 8.08c-1.44 0-2.8.32-4.42.95L5.66 5.71c-.16-.3-.54-.42-.84-.26-.3.16-.42.54-.26.85L6.4 9.48C3.3 11.25 1.28 14.44 1 18h22c-.28-3.56-2.3-6.75-5.4-8.52zM7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zm10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"/></svg>
+                        </div>
+                        <span>أندرويد 6.0+</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        </div>
+                        <span>آمن 100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual - Floating Logo with Orbiting Elements -->
+            <div class="hero-visual reveal-up" style="animation-delay: 0.2s">
+                <div class="hero-logo-orbit">
+                    <!-- Orbiting rings -->
+                    <div class="orbit-ring orbit-ring-1"></div>
+                    <div class="orbit-ring orbit-ring-2"></div>
+                    <div class="orbit-ring orbit-ring-3"></div>
+                    
+                    <!-- Orbiting dots -->
+                    <div class="orbit-dot orbit-dot-1"></div>
+                    <div class="orbit-dot orbit-dot-2"></div>
+                    <div class="orbit-dot orbit-dot-3"></div>
+                    <div class="orbit-dot orbit-dot-4"></div>
+                    
+                    <!-- Central Logo -->
+                    <div class="hero-logo-center">
+                        <div class="logo-glow-pulse"></div>
+                        <img src="./app_icon.png" alt="Amraa App" class="hero-logo-img">
+                    </div>
+                </div>
+
+                <!-- Floating Feature Badges -->
+                <div class="floating-badge fb-1">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                    <span>حماية كاملة</span>
+                </div>
+                <div class="floating-badge fb-2">
+                    <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    <span>تنظيم الوقت</span>
+                </div>
+                <div class="floating-badge fb-3">
+                    <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                    <span>قفل التطبيقات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats Highlight Banner -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal-up">
+                    <div class="stat-icon-bg">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                    </div>
+                    <div class="stat-number" data-count="100" data-suffix="%">100%</div>
+                    <div class="stat-label">خصوصية وأمان تام</div>
+                </div>
+                <div class="stat-card reveal-up" style="animation-delay: 0.1s">
+                    <div class="stat-icon-bg">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <div class="stat-number" data-count="0" data-suffix="%">0%</div>
+                    <div class="stat-label">إعلانات أو نوافذ منبثقة</div>
+                </div>
+                <div class="stat-card reveal-up" style="animation-delay: 0.2s">
+                    <div class="stat-icon-bg">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    </div>
+                    <div class="stat-number" data-count="24" data-suffix="h">24h</div>
+                    <div class="stat-label">حماية وفلترة مستمرة</div>
+                </div>
+                <div class="stat-card reveal-up" style="animation-delay: 0.3s">
+                    <div class="stat-icon-bg">
+                        <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/></svg>
+                    </div>
+                    <div class="stat-number" data-count="6" data-suffix="+">6+</div>
+                    <div class="stat-label">أدوات مدمجة للتعافي</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">قوة الحماية في يدك</span>
+                <h2 class="section-title">ما الذي يقدمه لك <span>Amraa</span>؟</h2>
+                <p class="section-subtitle">جمعنا أهم الأدوات الأساسية في تطبيق واحد لمساعدتك على النجاح في إدارة يومك وحماية بصيرتك وعقلك.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: Time Management -->
+                <div class="feature-card glass-panel reveal-up" id="feat-1">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    </div>
+                    <h3 class="feature-title">تنظيم الوقت اليومي</h3>
+                    <p class="feature-desc">جدول مهام ذكي وأدوات تفاعلية لتنظيم وإدارة يومك بكفاءة، مما يمنع الفراغ المسبب للتشتت والرجوع للعادات السلبية.</p>
+                    <div class="feature-number">01</div>
+                </div>
+
+                <!-- Feature 2: Digital & Porn Addiction Recovery -->
+                <div class="feature-card glass-panel reveal-up" id="feat-2" style="animation-delay: 0.1s">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"/></svg>
+                    </div>
+                    <h3 class="feature-title">التعافي من الإدمان</h3>
+                    <p class="feature-desc">عداد أيام التعافي الذكي ونظام تحفيزي دائم يرافقك خطوة بخطوة للتحرر الكامل من قيود الإدمان الرقمي والإباحي.</p>
+                    <div class="feature-number">02</div>
+                </div>
+
+                <!-- Feature 3: App Blocking -->
+                <div class="feature-card glass-panel reveal-up" id="feat-3" style="animation-delay: 0.2s">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                    </div>
+                    <h3 class="feature-title">قفل التطبيقات والتشتت</h3>
+                    <p class="feature-desc">احجب التطبيقات المشتتة لتركيز انتباهك على أعمالك أو دراستك، ومنع فتحها في فترات الضعف والتعب الذهني.</p>
+                    <div class="feature-number">03</div>
+                </div>
+
+                <!-- Feature 4: Athkar & Daily Stories -->
+                <div class="feature-card glass-panel reveal-up" id="feat-4" style="animation-delay: 0.3s">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M21 5c-1.11-.9-2.45-1.5-4-1.5-2.3 0-5 1.55-5 3.57C12 4.95 9.3 3.4 7 3.4c-1.55 0-2.89.6-4 1.5v13.5c0 .28.22.5.5.5.12 0 .24-.04.35-.1C4.9 18.1 6.13 17.5 7 17.5c2.3 0 5 1.55 5 3.57 0-2.02 2.7-3.57 5-3.57 1.55 0 2.89.6 4 1.5.28 0 .5-.22.5-.5V5.5c0-.28-.22-.5-.5-.5zM20 16.5c-.83-.48-1.87-.75-3-.75-2.3 0-5 1.55-5 3.57V7.07c0-2.02 2.7-3.57 5-3.57 1.13 0 2.17.27 3 .75v12.25z"/></svg>
+                    </div>
+                    <h3 class="feature-title">أذكار وقصص يومية</h3>
+                    <p class="feature-desc">حصّن نفسك بأذكار الصباح والمساء، واستلهم العبر والتحفيز من قصص تعافي واقعية ومقالات توعوية تُحدث يومياً.</p>
+                    <div class="feature-number">04</div>
+                </div>
+
+                <!-- Feature 5: IQ Test -->
+                <div class="feature-card glass-panel reveal-up" id="feat-5" style="animation-delay: 0.4s">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.07 19.64 10.47 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm-1-8h2v2h-2zm0-4h2v2h-2zm0 8h2v2h-2z"/></svg>
+                    </div>
+                    <h3 class="feature-title">اختبار ذكاء العقل</h3>
+                    <p class="feature-desc">اختبارات عقلية وتحديات منطقية يومية لتنشيط خلايا الدماغ وتحسين مستويات التركيز والذاكرة بعد أضرار الإدمان الرقمي.</p>
+                    <div class="feature-number">05</div>
+                </div>
+
+                <!-- Feature 6: Adult Site Blocking -->
+                <div class="feature-card glass-panel reveal-up" id="feat-6" style="animation-delay: 0.5s">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                    </div>
+                    <h3 class="feature-title">حظر المواقع الإباحية</h3>
+                    <p class="feature-desc">فلتر قوي ومطور لحظر وتصفية المواقع والروابط الضارة والإباحية على مستوى نظام الهاتف بأكمله لحمايتك التامة.</p>
+                    <div class="feature-number">06</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Widgets Section -->
+    <section class="interactive-section" id="interactive">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">تفاعل وجرب الآن</span>
+                <h2 class="section-title">عش تجربة <span>Amraa</span> على الويب</h2>
+                <p class="section-subtitle">قمنا بتهيئة بيئة تفاعلية مصغرة لبعض وظائف التطبيق، جربها بنفسك واشعر بالفرق!</p>
+            </div>
+
+            <div class="interactive-grid">
+                
+                <!-- Right Widget: Tasks and Athkar Checklist -->
+                <div class="interactive-box glass-panel reveal-up" id="tasks-widget">
+                    <div class="widget-header">
+                        <h3 class="widget-title">
+                            <div class="widget-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </div>
+                            المهام والروتين اليومي
+                        </h3>
+                        <div class="widget-progress-ring">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="circle-progress" id="task-progress-ring" stroke-dasharray="0, 100" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="progress-text" id="task-progress-text">0%</span>
+                        </div>
+                    </div>
+                    <p class="widget-desc">اضغط على المهام التي أنجزتها اليوم:</p>
+                    
+                    <div class="task-widget-list">
+                        <div class="task-item" onclick="toggleTask(this)" id="task-1">
+                            <div class="task-checkbox">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                            <span class="task-text">قراءة أذكار الصباح والمساء</span>
+                            <span class="task-category">أذكار</span>
+                        </div>
+
+                        <div class="task-item" onclick="toggleTask(this)" id="task-2">
+                            <div class="task-checkbox">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                            <span class="task-text">الامتناع عن التطبيقات المشتتة لـ 3 ساعات</span>
+                            <span class="task-category">تركيز</span>
+                        </div>
+
+                        <div class="task-item" onclick="toggleTask(this)" id="task-3">
+                            <div class="task-checkbox">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                            <span class="task-text">قراءة قصة نجاح ملهمة لرحلة تعافي</span>
+                            <span class="task-category">قصص</span>
+                        </div>
+
+                        <div class="task-item" onclick="toggleTask(this)" id="task-4">
+                            <div class="task-checkbox">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                            <span class="task-text">حل تحدي اختبار الذكاء اليومي</span>
+                            <span class="task-category">ذكاء</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left Widget: Mini IQ Quiz -->
+                <div class="interactive-box glass-panel reveal-up" id="iq-widget" style="animation-delay: 0.15s">
+                    <div class="widget-header">
+                        <h3 class="widget-title">
+                            <div class="widget-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                            </div>
+                            اختبار الذكاء السريع
+                        </h3>
+                    </div>
+                    <p class="widget-desc">أجب على الأسئلة لقياس سرعة البديهة:</p>
+
+                    <div class="iq-quiz-container">
+                        <div class="quiz-progress">
+                            <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+                        </div>
+
+                        <!-- Question 1 -->
+                        <div class="quiz-question-box active" id="q-1">
+                            <div class="quiz-q-num">السؤال 1 من 3</div>
+                            <div class="quiz-q-text">إذا كان عمر أحمد 4 سنوات وعمر أخته نصف عمره، فعندما يصبح عمر أحمد 100 سنة، كم سيكون عمر أخته؟</div>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" onclick="submitAnswer(1, 50)" id="q1-opt1">50 سنة</button>
+                                <button class="quiz-option-btn" onclick="submitAnswer(1, 98)" id="q1-opt2">98 سنة</button>
+                                <button class="quiz-option-btn" onclick="submitAnswer(1, 96)" id="q1-opt3">96 سنة</button>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="quiz-question-box" id="q-2">
+                            <div class="quiz-q-num">السؤال 2 من 3</div>
+                            <div class="quiz-q-text">بعض الأشهر تحتوي على 30 يوماً، وبعضها على 31 يوماً. فكم شهراً في السنة يحتوي على 28 يوماً؟</div>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" onclick="submitAnswer(2, 1)" id="q2-opt1">شهر واحد (فبراير)</button>
+                                <button class="quiz-option-btn" onclick="submitAnswer(2, 12)" id="q2-opt2">جميع الأشهر الـ 12</button>
+                                <button class="quiz-option-btn" onclick="submitAnswer(2, 6)" id="q2-opt3">6 أشهر فقط</button>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="quiz-question-box" id="q-3">
+                            <div class="quiz-q-num">السؤال 3 من 3</div>
+                            <div class="quiz-q-text">ما هو الشيء الذي يتكلم جميع لغات العالم ولكنه لا يملك لساناً؟</div>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" onclick="submitAnswer(3, 'echo')" id="q3-opt1">الصدى (Echo)</button>
+                                <button class="quiz-option-btn" onclick="submitAnswer(3, 'radio')" id="q3-opt2">الراديو</button>
+                                <button class="quiz-option-btn" onclick="submitAnswer(3, 'book')" id="q3-opt3">الكتاب</button>
+                            </div>
+                        </div>
+
+                        <!-- Result Panel -->
+                        <div class="quiz-result-panel" id="quiz-result">
+                            <div class="quiz-result-icon-wrapper">
+                                <svg class="quiz-result-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </div>
+                            <h4 class="quiz-result-score" id="quiz-score-text">أحسنت! درجتك هي 3/3</h4>
+                            <p class="quiz-result-desc" id="quiz-desc-text">عقلك يعمل بتركيز منطقي رائع. حمل تطبيق Amraa للحصول على تحديات يومية!</p>
+                            <button class="btn-restart-quiz" onclick="restartQuiz()" id="restart-quiz-btn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                                إعادة الاختبار
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section class="guide-section" id="installation">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">سهل وسريع</span>
+                <h2 class="section-title">كيف تقوم بتثبيت ملف الـ <span>APK</span>؟</h2>
+                <p class="section-subtitle">يمكنك تثبيته مباشرة بخطوات آمنة وبسيطة:</p>
+            </div>
+
+            <div class="steps-timeline reveal-up">
+                <!-- Step 1 -->
+                <div class="step-card glass-panel" id="step-1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">تحميل ملف APK المباشر</h3>
+                        <p class="step-desc">اضغط على زر <strong>تحميل للأندرويد</strong> في أعلى الصفحة أو أسفلها لبدء تنزيل ملف <code>app-release.apk</code> مباشرة على هاتفك.</p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-card glass-panel" id="step-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">السماح بالتثبيت من مصادر خارجية</h3>
+                        <p class="step-desc">عند فتح الملف، فعّل خيار <strong>السماح بتثبيت التطبيقات من هذا المصدر</strong> من نافذة التنبيه الأمني.</p>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card glass-panel" id="step-3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">إتمام التثبيت وفتح التطبيق</h3>
+                        <p class="step-desc">اضغط على <strong>تثبيت (Install)</strong> ثم <strong>فتح (Open)</strong> وابدأ رحلتك مع Amraa فوراً!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-container reveal-up">
+                <div class="faq-item" id="faq-1">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <span class="faq-question">هل التطبيق آمن تماماً على بياناتي؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                    </div>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            <p>نعم، بكل تأكيد. يتم فحص ملف الـ APK الخاص بتطبيق <strong>Amraa</strong> بشكل دوري للتأكد من خلوه من أي برمجيات خبيثة أو برامج تتبع. التطبيق لا يطلب صلاحيات إضافية غير ضرورية، ولا يشارك أي بيانات خاصة مع أطراف خارجية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner" id="cta">
+        <div class="container">
+            <div class="cta-banner-card glass-panel reveal-up">
+                <div class="cta-glow-orb"></div>
+                <div class="cta-banner-content">
+                    <div class="cta-logo-circle">
+                        <img src="./app_icon.svg" alt="Amraa Logo" class="cta-logo-img">
+                    </div>
+                    <h2 class="cta-banner-title">ابدأ عهدك الجديد نحو الحرية</h2>
+                    <p class="cta-banner-desc">انضم إلى مجتمع الأبطال الذين استردوا حياتهم. تطبيق Amraa رفيقك المثالي.</p>
+                    <a href="./app-release.apk" class="btn-download cta-download" download id="bottom-download-btn">
+                        <div class="btn-icon-wrapper">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                            </svg>
+                        </div>
+                        <div class="btn-download-text">
+                            <span class="small">تحميل مباشر</span>
+                            <span class="big">Download Amraa APK</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-circle">
+                        <img src="./app_icon.png" alt="Amraa Logo" class="footer-logo-img">
+                    </div>
+                    <span class="footer-logo-text">Amraa</span>
+                </div>
+                
+                <ul class="footer-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#interactive">تجربة تفاعلية</a></li>
+                    <li><a href="#installation">دليل التثبيت</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Amraa. جميع الحقوق محفوظة.</p>
+                <p>صنع بحرص ليكون عوناً لك في طريقك.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="./script.js"></script>
+</body>
+</html>
